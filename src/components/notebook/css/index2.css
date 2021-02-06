@@ -1,0 +1,75 @@
+.add-cell {
+    align-items:center;
+    align-self:center;
+    display:flex;
+    flex-flow:column;
+    height:12px;
+    position:relative;
+    width:100%
+}
+.add-cell>hr 
+{
+    border-color:darkgrey;
+    border-style:solid;
+    border-top:none;
+    border-width:3px;
+    left:20px;
+    opacity:0;
+    position:absolute;
+    right:20px;
+    top:0;
+    transition:visibility 0s 250ms,opacity 200ms;
+    visibility:hidden
+}
+.add-cell:hover>hr
+{
+    opacity:1;
+    transition:visibility 100ms 0ms,opacity 200ms;
+    visibility:visible
+}
+.add-cell-buttons
+{
+    display:flex;
+    color: white;
+    background-color: rgb(3, 25, 73);
+    border-width:3px;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    margin-top:-4px;
+    opacity:0;
+    transition:opacity 200ms 0ms;
+    visibility:hidden;
+    z-index:20
+}
+.add-cell>.add-cell-buttons
+{
+    transition:opacity 200ms 250ms,visibility 0s 250ms;
+}
+.add-cell:hover>.add-cell-buttons
+{
+    opacity:1;
+    transition:opacity 200ms 100ms;
+    visibility:visible
+}
+.add-button {
+    margin-right: 10px;
+    padding-right: auto;
+    border: 2px solid rgb(209, 20, 7);
+}
+.add-code {
+    border-color:rgb(0, 255, 42);
+}
+.add-text {
+    border-color:rgb(14, 93, 211);
+}
+.add-img {
+    border-color:rgb(144, 204, 33);
+}
+/* .cell>.add-cell{height:12px}
+.cell .add-cell-buttons{margin-top:-8px}
+.cell .add-cell>hr{margin-top:5px}
+.notebook-content>.add-cell{margin-top:-1px} */
+/* .toc-refresh-button{position:absolute;right:4px;top:12px}
+.toc>.main-content{min-height:48px;padding:4px 8px}
+.text>.main-content{padding-bottom:4px}
+.section-header{align-items:center;background:var(--colab-secondary-surface-color);border:dashed 1px var(--colab-border-color);cursor:pointer;display:flex;margin-left:4px;margin-right:4px}
+.section-header-container{flex-grow:1;font-style:italic;padding:7px 7px 7px 12px}.text.executable .section-header-container{padding-left:0}.section-header:hover{background:var(--colab-highlighted-surface-color)}.notebook-busy .section-header{cursor:progress}.text colab-run-button{display:none;margin:-3px 0 -3px -5px}.text.executable colab-run-button{display:block}.toc * blockquote{margin:0 20px}.toc * p{margin:0}.cell.selected * .cell-mask{background:rgba(0,156,255,0.35);height:100%;position:absolute;width:100%;z-index:10}.panel-sizing .cell-mask{height:100%;position:absolute;width:100%;z-index:10}.cell.toc * .cell-mask{left:0;top:0}.codecell-input-output{position:relative}.code.focused .cell-gutter{background:var(--colab-highlighted-surface-color)}.cell-gutter{flex-flow:column;min-height:39px;width:var(--colab-cell-gutter-width)}.cell-execution-container{bottom:0;left:0;position:absolute;top:0;width:var(--colab-cell-gutter-width)}.code-has-output .cell-execution-container{bottom:30px}.colab-tooltip{max-width:700px;animation:fadeOut 400ms;animation:fadeIn 400ms;vertical-align:middle;background-color:var(--colab-secondary-surface-color);border:var(--colab-border-color) 1px solid;outline:none;padding:3px;margin:0;padding-left:7px;font-family:var(--colab-code-font-family);min-height:50px;box-shadow:var(--box-shadow-elevation-3dp);border-radius:4px;position:absolute;z-index:25}.tooltiptext{background-color:var(--colab-secondary-surface-color);border:0;border-radius:0;font-size:13px;max-height:500px;overflow:auto;white-space:pre-wrap}.colab-tooltip>.pretooltiparrow:before{background-color:var(--colab-secondary-surface-color);border-color:var(--colab-border-color)}colab-tab-pane .scratchpad .cell-toolbar,colab-tab-pane .scratchpad .add-cell,colab-tab-pane .cell-tab .add-cell{display:none;visibility:hidden}.markdown-toolbar{display:none}.text.edit .markdown-toolbar{background-color:var(--colab-secondary-surface-color);border-bottom:1px solid var(--colab-border-color);display:block;margin-bottom:4px;overflow:hidden;padding-left:4px;white-space:nowrap}.markdown-toolbar paper-icon-button{height:40px;padding:8px 10px;width:40px}.markdown-toolbar .markdown-insert-image{border-radius:40px;height:40px;margin:0;max-width:40px;min-width:40px;position:relative;vertical-align:bottom;--iron-icon-height:20px}.markdown-toolbar .markdown-insert-image input[type=file]{bottom:0;left:0;opacity:0;position:absolute;right:0;top:0}.text-cell-section-header{position:relative}paper-icon-button.header-section-toggle{color:var(--colab-primary-text-color);height:26px;left:-30px;line-height:26px;margin:0;padding:0;position:absolute;top:calc(50% - 14px);transition:transform 0.2s;width:26px}.text.collapsed .header-section-toggle{transform:rotate(-90deg)}paper-button.output-show-output{font-size:12px}.editor .monaco-editor .view-overlays .current-line,.debugger-editor .monaco-editor .view-overlays .current-line{border:0}.monaco-editor.focused .view-overlays .current-line{border:var(--colab-editor-focus-border-thickness) solid var(--colab-editor-focus-color)}.monaco-editor .overflowingContentWidgets .parameter-hints-widget>.wrapper{max-height:250px}.monaco-editor-hover .hover-row.status-bar{display:none}.monaco-editor .overflowingContentWidgets .monaco-editor-hover .monaco-editor-hover-content,.monaco-editor .overflowingContentWidgets .parameter-hints-widget>.wrapper{max-width:800px}.monaco-editor .overflowingContentWidgets .suggest-widget,.monaco-editor .overflowingContentWidgets .suggest-widget.docs-side{width:800px}.monaco-editor .overflowingContentWidgets .monaco-editor-overlaymessage{z-index:var(--colab-panel-zindex)}.notebook-vertical.large-notebook .decorationsOverviewRuler{display:none}.editor .monaco-editor .margin-view-overlays .line-numbers.lh-odd,.debugger-editor .monaco-editor .margin-view-overlays .line-numbers.lh-odd{margin-top:0}.editor .monaco-editor .line-numbers,.editor .monaco-editor .current-line~.line-numbers,.debugger-editor .monaco-editor .line-numbers,.debugger-editor .monaco-editor .current-line~.line-numbers{color:var(--colab-tertiary-text-color)}.editor .monaco-editor .quick-open-tree{min-height:108px}.editor .monaco-editor .markdown-docs,.editor .monaco-editor .markdown-hover{white-space:pre!important}.cell.focused .monaco-editor .current-line~.line-numbers{color:var(--colab-primary-text-color)}#context-menu .goog-menuitem{padding-left:18px;padding-right:9em}#context-menu .goog-menuitem-accel{padding-right:18px}body.mobile .inputarea{flex-wrap:wrap}body.mobile .outputview{-webkit-overflow-scrolling:touch;overflow:auto}body.mobile .add-cell{max-width:100px;overflow-x:hidden;visibility:hidden} */

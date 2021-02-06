@@ -1,0 +1,50 @@
+{
+    "name": "Circle",
+    "color" : "red",
+  "cells": [
+    {
+        "cell_type": "Markdown",
+		"source" : "<div className='App'><div className='content'>"
+    },
+    {
+      "cell_type": "Markdown",
+        "source" : "sudo apt update && Sudo apt upgrade"
+    },
+    {
+      "cell_type": "Code",
+      "source" : "sudo apt update && Sudo apt upgrade"
+    },
+    {
+    "cell_type": "Code",
+    "source" : "%matplotlib inline \n from qiskit import * \n from qiskit.visualization import * \n from qiskit.tools.monitor import *"
+    },
+    {
+      "cell_type": "Code",
+      "source" : "sudo apt update && Sudo apt upgrade"
+      },
+      {
+        "cell_type": "Code",
+        "source" : "sudo apt update && Sudo apt upgrade"
+      },
+      {
+        "cell_type": "Code",
+        "source" : "sudo apt update && Sudo apt upgrade"
+      },
+      {
+        "cell_type": "Code",
+        "source" : "sudo apt update && Sudo apt upgrade"
+      },
+      {
+        "cell_type": "Code",
+        "source" : "sudo apt update && Sudo apt upgrade"
+      },
+      {
+        "cell_type": "Code",
+        "source" : "sudo apt update && Sudo apt upgrade"
+      },
+      {
+        "cell_type": "Code",
+        "source" : "sudo apt update && Sudo apt upgrade"
+      }
+  ]
+}

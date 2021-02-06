@@ -1,0 +1,95 @@
+.notebook {
+  background-color: #383838;
+}
+  #notebook_user_id {
+    /* height: 5%; */
+      max-height:40px ;
+      background-color: darkcyan;
+  }
+  #notebook_footer {
+    /* height: 5%; */
+    max-height: 40px;
+    background-color: darkcyan;
+
+  }
+  #notebook_current {
+    margin-top: 0px;
+      height: calc(100% - 40px);
+  }
+  #notebook_Row {
+      height: 100%;
+      width: 100%;
+      overflow-y: scroll;
+  }
+  .nb-content {
+    /**/
+  }
+  .title-cell {
+    height: auto;
+    color: cornsilk;
+    font-size: larger;
+    padding: 0.3em;
+    padding-left: 2em;
+  }
+  .btn-group {
+    /* padding : 50px 0px 0px 0px ;  */
+    height:  100%;
+    width: 100%;
+    overflow-y: visible;
+    display: inline-block;
+  }
+  .btn-group button {
+    background-color: purple; /* Green background */
+    border: 3px solid skyblue; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: skyblue;
+    border: 3px solid purple; /* Green border */
+  }
+  .cell {
+    width: 100%;   /* to be updated */
+    height: auto;
+    color: #d5d5d5;
+    background-color: #1e1e1e;
+    margin: 2px;
+  }
+  .cell-wrapper {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+  .cell-content {
+    /* flex-direction: row; */
+    display: inline;
+    /* padding: -1em; */
+  }
+  pre {
+    /* width: auto; */
+    /* margin: 1px; */
+    padding: 0em;
+    /* flex-direction: row; */
+
+  }
+  .cell.Code {
+    /* background-color: ; */
+    color: violet;
+  }
+  .cell.Markdown {
+    background-color: #383838;
+    padding: 0.5em;
+    border: 1px solid rgb(79, 196, 170);
+  }
+  .cell.selected {
+    background-color: #383838;
+    border: 2px solid rgb(245, 20, 4);
+  }
