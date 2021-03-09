@@ -18,7 +18,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    // "start": "react-scripts start",
+    "start0": "react-scripts start",
     "start:dev": "npm run lint && npm run start",
     "start": "node src/index.js --unhandled-rejections=warn",
     "build": "react-scripts build",
