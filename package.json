@@ -18,9 +18,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start0": "react-scripts start",
+    "start": "react-scripts start --unhandled-rejections=warn",
     "start:dev": "npm run lint && npm run start",
-    "start": "node src/index.js --unhandled-rejections=warn",
+    "start0": "node src/index.js --unhandled-rejections=warn",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
